@@ -612,6 +612,40 @@ footer {
     margin: 14px 0;
 }
 
+
+.cert-signature {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.signature-image {
+    display: block;
+    width: 160px;
+    height: 65px;
+    object-fit: contain;
+    margin: 0 auto -5px;
+}
+
+.signature-line {
+    width: 280px;
+    border-top: 1.5px solid #0f172a;
+    margin: 0 auto 8px;
+}
+
+.signature-name {
+    font-size: 13px;
+    font-weight: 800;
+    color: #0f172a;
+    text-transform: uppercase;
+}
+
+.signature-position {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #334155;
+    font-weight: 600;
+}
+
 @media print {
     body {
         background: white !important;
@@ -988,9 +1022,27 @@ footer {
         <h3 style="color: #0f172a; margin: 10px 0; font-size: 17px;">WARISAN MINDA: SEJARAH NEGERI PERAK & SUKAN TRADISIONAL</h3>
         <div class="cert-score" id="certMarkahPeserta">Pencapaian Markah: 0/150</div>
         <p style="font-size: 13px; color: #475569; margin-top: 8px;" id="certTarikhPeserta">Tarikh Dikeluarkan: -</p>
-        <br><br>
-        <p style="margin-bottom: 4px;">_________________________________________</p>
-        <p style="font-size: 13px; color: #1e293b;"><strong>Pengerusi / Penyelaras Program<br>Majlis Belia Daerah Perak Tengah</strong></p>
+
+<div class="cert-signature">
+
+    <img src="tandatangan.png"
+         alt="Tandatangan Pegawai"
+         class="signature-image">
+
+    <div class="signature-line"></div>
+
+    <div class="signature-name">
+        MEGAT MUHAMMAD JAMIL BIN MEGAT AZAHAR
+    </div>
+
+    <div class="signature-position">
+        PENGERUSI
+        <br>
+        MAJLIS BELIA DAERAH PERAK TENGAH
+    </div>
+
+</div>
+
     </div>
 </section>
 
