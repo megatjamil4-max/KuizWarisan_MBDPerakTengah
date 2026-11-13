@@ -288,14 +288,13 @@ footer{text-align:center;padding:25px 15px;color:var(--muted);font-size:12px;bor
 
     border-top: 1px solid #777;
 
-    margin: -18px auto 8px;
+    margin: -12px auto 8px;
 
     position: relative;
 
     z-index: 1;
-    
-    }
 
+}
 
 .signature-name{font-size:13px;font-weight:800;text-transform:uppercase}
 
