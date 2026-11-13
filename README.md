@@ -1,587 +1,919 @@
 <html lang="ms">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>WARISAN MINDA | Majlis Belia Daerah Perak Tengah</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 :root {
-
- --navy:#0f172a;--blue:#1e3a8a;--yellow:#facc15;--gold:#eab308;
-
- --red:#dc2626;--green:#059669;--bg:#f8fafc;--border:#e2e8f0;
-
+ --navy:#0f172a;
+ --blue:#1e3a8a;
+ --yellow:#facc15;
+ --gold:#eab308;
+ --red:#dc2626;
+ --green:#059669;
+ --bg:#f8fafc;
+ --border:#e2e8f0;
  --muted:#475569;
-
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+* {
+ box-sizing:border-box;
+ margin:0;
+ padding:0;
+}
 
-body{
-
- font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);
-
+body {
+ font-family:'Plus Jakarta Sans',sans-serif;
+ background:var(--bg);
  background-image:radial-gradient(#cbd5e1 .75px,transparent .75px);
-
- background-size:24px 24px;color:var(--navy);line-height:1.6;
-
- min-height:100vh;display:flex;flex-direction:column
-
+ background-size:24px 24px;
+ color:var(--navy);
+ line-height:1.6;
+ min-height:100vh;
+ display:flex;
+ flex-direction:column;
 }
 
-header{
-
- background:rgba(15,23,42,.97);color:white;padding:12px 24px;
-
- display:flex;justify-content:space-between;align-items:center;
-
- position:sticky;top:0;z-index:100;border-bottom:3px solid var(--yellow)
-
+header {
+ background:rgba(15,23,42,.97);
+ color:white;
+ padding:12px 24px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ position:sticky;
+ top:0;
+ z-index:100;
+ border-bottom:3px solid var(--yellow);
 }
 
-.logo{display:flex;align-items:center;gap:12px}
-
-.logo img{width:48px;height:48px;object-fit:contain;background:white;border-radius:50%;padding:3px}
-
-.logo-title{font-size:19px;font-weight:800}
-
-.logo-sub{font-size:10px;font-weight:700;color:var(--yellow);letter-spacing:.6px}
-
-button{
-
- cursor:pointer;border:0;padding:12px 19px;border-radius:12px;
-
- font-family:inherit;font-weight:700;font-size:14px;
-
- display:inline-flex;align-items:center;justify-content:center;gap:8px;
-
- transition:.2s
-
+.logo {
+ display:flex;
+ align-items:center;
+ gap:12px;
 }
 
-button:hover:not(:disabled){transform:translateY(-2px)}
+.logo img {
+ width:48px;
+ height:48px;
+ object-fit:contain;
+ background:white;
+ border-radius:50%;
+ padding:3px;
+}
 
-button:disabled{opacity:.45;cursor:not-allowed}
+.logo-title {
+ font-size:19px;
+ font-weight:800;
+}
 
-.primary{background:linear-gradient(135deg,var(--yellow),var(--gold));color:#18181b}
+.logo-sub {
+ font-size:10px;
+ font-weight:700;
+ color:var(--yellow);
+ letter-spacing:.6px;
+}
 
-.secondary{background:var(--navy);color:white}
+button {
+ cursor:pointer;
+ border:0;
+ padding:12px 19px;
+ border-radius:12px;
+ font-family:inherit;
+ font-weight:700;
+ font-size:14px;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ gap:8px;
+ transition:.2s;
+}
 
-.outline{background:white;color:var(--navy);border:1.5px solid var(--border)}
+button:hover:not(:disabled) {
+ transform:translateY(-2px);
+}
 
-.danger{background:var(--red);color:white}
+button:disabled {
+ opacity:.45;
+ cursor:not-allowed;
+}
 
-.container{max-width:900px;width:100%;margin:28px auto;padding:0 18px;flex:1}
+.primary {
+ background:linear-gradient(135deg,var(--yellow),var(--gold));
+ color:#18181b;
+}
 
-.hero{
+.secondary {
+ background:var(--navy);
+ color:white;
+}
 
+.outline {
+ background:white;
+ color:var(--navy);
+ border:1.5px solid var(--border);
+}
+
+.danger {
+ background:var(--red);
+ color:white;
+}
+
+.container {
+ max-width:900px;
+ width:100%;
+ margin:28px auto;
+ padding:0 18px;
+ flex:1;
+}
+
+.hero {
  background:linear-gradient(135deg,#0f172a,#1e3a8a 65%,#172554);
-
- color:white;padding:42px 28px;border-radius:24px;text-align:center;
-
- border-bottom:5px solid var(--yellow);box-shadow:0 20px 40px -15px #0f172a55
-
+ color:white;
+ padding:42px 28px;
+ border-radius:24px;
+ text-align:center;
+ border-bottom:5px solid var(--yellow);
+ box-shadow:0 20px 40px -15px #0f172a55;
 }
 
-.hero-logo{
-
- width:105px;height:105px;object-fit:contain;background:white;
-
- border-radius:50%;padding:4px;margin:0 auto 16px;display:block
-
+.hero-logo {
+ width:105px;
+ height:105px;
+ object-fit:contain;
+ background:white;
+ border-radius:50%;
+ padding:4px;
+ margin:0 auto 16px;
+ display:block;
 }
 
-.badge-perak{
-
- display:inline-block;background:#facc1525;border:1px solid #facc1566;
-
- color:var(--yellow);padding:6px 14px;border-radius:99px;
-
- font-size:12px;font-weight:800;letter-spacing:.7px;margin-bottom:12px
-
+.badge-perak {
+ display:inline-block;
+ background:#facc1525;
+ border:1px solid #facc1566;
+ color:var(--yellow);
+ padding:6px 14px;
+ border-radius:99px;
+ font-size:12px;
+ font-weight:800;
+ letter-spacing:.7px;
+ margin-bottom:12px;
 }
 
-.hero h1{font-size:40px;font-weight:800;margin:6px 0}
-
-.hero h3{font-size:16px;color:#e2e8f0;margin-bottom:14px}
-
-.hero p{color:#cbd5e1;max-width:580px;margin:0 auto 24px;font-size:14px}
-
-.card{
-
- background:white;padding:26px;margin-top:22px;border-radius:20px;
-
- box-shadow:0 4px 20px -2px #0f172a10;border:1px solid var(--border)
-
+.hero h1 {
+ font-size:40px;
+ font-weight:800;
+ margin:6px 0;
 }
 
-.card h2{font-size:21px;font-weight:800;margin-bottom:16px;display:flex;gap:10px}
-
-.format-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:18px 0 22px}
-
-.format-item{background:#f8fafc;border:1px solid var(--border);padding:15px;border-radius:14px;text-align:center}
-
-.format-item .val{font-size:21px;font-weight:800;color:var(--blue);display:block}
-
-.format-item .lbl{font-size:12px;color:var(--muted);font-weight:600}
-
-.hidden{display:none!important}
-
-label{font-weight:700;font-size:14px;display:block;margin-bottom:6px}
-
-input,select{
-
- width:100%;padding:13px 15px;margin-bottom:17px;border:1.5px solid var(--border);
-
- border-radius:12px;font:inherit;font-size:14px;background:#f8fafc
-
+.hero h3 {
+ font-size:16px;
+ color:#e2e8f0;
+ margin-bottom:14px;
 }
 
-input:focus,select:focus{outline:none;border-color:var(--blue);background:white;box-shadow:0 0 0 3px #1e3a8a15}
-
-.quiz-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
-
-.pill-tag{background:#eff6ff;color:var(--blue);border:1px solid #bfdbfe;padding:6px 12px;border-radius:99px;font-size:12px;font-weight:800}
-
-.timer-pill{background:#fef2f2;color:var(--red);padding:6px 12px;border-radius:99px;font-size:13px;font-weight:800}
-
-.progress{height:10px;background:#e2e8f0;border-radius:99px;margin-bottom:22px;overflow:hidden}
-
-.progress-bar{height:100%;background:linear-gradient(90deg,var(--blue),var(--gold));width:0;transition:width .3s}
-
-.q-counter{font-size:12px;font-weight:800;color:var(--muted);margin-bottom:8px}
-
-.question{font-size:20px;font-weight:700;line-height:1.5;margin-bottom:20px}
-
-.options{display:grid;gap:12px}
-
-.option{
-
- background:white;border:1.5px solid var(--border);text-align:left;width:100%;
-
- padding:15px;border-radius:14px;font-size:14px;font-weight:500;color:var(--navy);
-
- display:flex;align-items:center;gap:13px;justify-content:flex-start
-
+.hero p {
+ color:#cbd5e1;
+ max-width:580px;
+ margin:0 auto 24px;
+ font-size:14px;
 }
 
-.opt-letter{width:32px;height:32px;border-radius:8px;background:#f1f5f9;display:inline-flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0}
-
-.option:hover:not(:disabled){border-color:var(--blue);background:#f8fafc}
-
-.option.selected{background:#eff6ff;border:2px solid var(--blue);font-weight:700}
-
-.option.selected .opt-letter{background:var(--blue);color:var(--yellow)}
-
-.score-ring{
-
- width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--blue));
-
- color:var(--yellow);display:flex;flex-direction:column;align-items:center;justify-content:center;
-
- margin:16px auto;border:5px solid var(--yellow)
-
+.card {
+ background:white;
+ padding:26px;
+ margin-top:22px;
+ border-radius:20px;
+ box-shadow:0 4px 20px -2px #0f172a10;
+ border:1px solid var(--border);
 }
 
-.score-num{font-size:38px;font-weight:800;line-height:1}
-
-.score-max{font-size:12px;color:white;margin-top:5px}
-
-.review{padding:17px;border:1px solid var(--border);margin:13px 0;border-radius:14px}
-
-.correct{border-left:6px solid var(--green);background:#f0fdf4}
-
-.wrong{border-left:6px solid var(--red);background:#fef2f2}
-
-.table-wrap{overflow-x:auto}
-
-table{width:100%;border-collapse:collapse;margin-top:12px;min-width:500px}
-
-th,td{text-align:left;padding:12px;border-bottom:1px solid var(--border);font-size:13px}
-
-th{background:#f1f5f9;color:var(--navy);font-size:12px}
-
-.modal-backdrop{
-
- position:fixed;inset:0;background:#0f172a99;backdrop-filter:blur(4px);
-
- display:flex;align-items:center;justify-content:center;z-index:999;padding:16px
-
+.card h2 {
+ font-size:21px;
+ font-weight:800;
+ margin-bottom:16px;
+ display:flex;
+ gap:10px;
 }
 
-.modal-box{background:white;max-width:420px;width:100%;border-radius:20px;padding:25px;border-top:5px solid var(--yellow)}
-
-.modal-title{font-size:19px;font-weight:800;margin-bottom:8px}
-
-.modal-msg{font-size:14px;color:var(--muted);margin-bottom:18px}
-
-.modal-actions{display:flex;justify-content:flex-end;gap:10px}
-
-footer{text-align:center;padding:25px 15px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);background:white;margin-top:40px}
-
-/* SIJIL */
-
-.cert-wrapper{
-
- background:white;border:10px double #ca8a04;padding:35px 28px;
-
- text-align:center;color:#0f172a;border-radius:5px;
-
- box-shadow:0 10px 30px #0001;margin:10px auto;max-width:800px
-
+.format-grid {
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+ gap:12px;
+ margin:18px 0 22px;
 }
 
-.cert-logo{width:100px;height:100px;object-fit:contain;margin:0 auto 8px}
-
-.cert-org{font-size:14px;font-weight:800;letter-spacing:1.5px;color:var(--blue);margin:5px 0}
-
-.cert-title{font-family:Georgia,serif;font-size:32px;font-weight:bold;margin:8px 0 15px}
-
-.cert-name{
-
- font-family:inherit;font-size:13px;font-weight:800;color:var(--blue);
-
- margin:14px auto;border-bottom:2px solid #ca8a04;display:inline-block;
-
- padding:0 20px 6px;text-transform:uppercase;max-width:100%;
-
- overflow-wrap:anywhere
-
+.format-item {
+ background:#f8fafc;
+ border:1px solid var(--border);
+ padding:15px;
+ border-radius:14px;
+ text-align:center;
 }
 
-.cert-score{display:inline-block;background:#fef9c3;border:1.5px solid #eab308;color:#854d0e;padding:8px 20px;border-radius:8px;font-weight:800;font-size:14px;margin:13px 0}
+.format-item .val {
+ font-size:21px;
+ font-weight:800;
+ color:var(--blue);
+ display:block;
+}
 
-.cert-signature{margin-top:30px;text-align:.signature-image {
+.format-item .lbl {
+ font-size:12px;
+ color:var(--muted);
+ font-weight:600;
+}
 
-    display: block;
+.hidden {
+ display:none!important;
+}
 
-    width: 160px;
+label {
+ font-weight:700;
+ font-size:14px;
+ display:block;
+ margin-bottom:6px;
+}
 
-    height: 65px;
+input,select {
+ width:100%;
+ padding:13px 15px;
+ margin-bottom:17px;
+ border:1.5px solid var(--border);
+ border-radius:12px;
+ font:inherit;
+ font-size:14px;
+ background:#f8fafc;
+}
 
-    object-fit: contain;
+input:focus,select:focus {
+ outline:none;
+ border-color:var(--blue);
+ background:white;
+ box-shadow:0 0 0 3px #1e3a8a15;
+}
 
-    margin: 0 auto;
+.quiz-header {
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ flex-wrap:wrap;
+ gap:10px;
+ margin-bottom:14px;
+}
 
-    position: relative;
+.pill-tag {
+ background:#eff6ff;
+ color:var(--blue);
+ border:1px solid #bfdbfe;
+ padding:6px 12px;
+ border-radius:99px;
+ font-size:12px;
+ font-weight:800;
+}
 
-    z-index: 2;
+.timer-pill {
+ background:#fef2f2;
+ color:var(--red);
+ padding:6px 12px;
+ border-radius:99px;
+ font-size:13px;
+ font-weight:800;
+}
 
+.progress {
+ height:10px;
+ background:#e2e8f0;
+ border-radius:99px;
+ margin-bottom:22px;
+ overflow:hidden;
+}
+
+.progress-bar {
+ height:100%;
+ background:linear-gradient(90deg,var(--blue),var(--gold));
+ width:0;
+ transition:width .3s;
+}
+
+.q-counter {
+ font-size:12px;
+ font-weight:800;
+ color:var(--muted);
+ margin-bottom:8px;
+}
+
+.question {
+ font-size:20px;
+ font-weight:700;
+ line-height:1.5;
+ margin-bottom:20px;
+}
+
+.options {
+ display:grid;
+ gap:12px;
+}
+
+.option {
+ background:white;
+ border:1.5px solid var(--border);
+ text-align:left;
+ width:100%;
+ padding:15px;
+ border-radius:14px;
+ font-size:14px;
+ font-weight:500;
+ color:var(--navy);
+ display:flex;
+ align-items:center;
+ gap:13px;
+ justify-content:flex-start;
+}
+
+.opt-letter {
+ width:32px;
+ height:32px;
+ border-radius:8px;
+ background:#f1f5f9;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ font-weight:800;
+ flex-shrink:0;
+}
+
+.option:hover:not(:disabled) {
+ border-color:var(--blue);
+ background:#f8fafc;
+}
+
+.option.selected {
+ background:#eff6ff;
+ border:2px solid var(--blue);
+ font-weight:700;
+}
+
+.option.selected .opt-letter {
+ background:var(--blue);
+ color:var(--yellow);
+}
+
+.score-ring {
+ width:140px;
+ height:140px;
+ border-radius:50%;
+ background:linear-gradient(135deg,var(--navy),var(--blue));
+ color:var(--yellow);
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ margin:16px auto;
+ border:5px solid var(--yellow);
+}
+
+.score-num {
+ font-size:38px;
+ font-weight:800;
+ line-height:1;
+}
+
+.score-max {
+ font-size:12px;
+ color:white;
+ margin-top:5px;
+}
+
+.review {
+ padding:17px;
+ border:1px solid var(--border);
+ margin:13px 0;
+ border-radius:14px;
+}
+
+.correct {
+ border-left:6px solid var(--green);
+ background:#f0fdf4;
+}
+
+.wrong {
+ border-left:6px solid var(--red);
+ background:#fef2f2;
+}
+
+.table-wrap {
+ overflow-x:auto;
+}
+
+table {
+ width:100%;
+ border-collapse:collapse;
+ margin-top:12px;
+ min-width:500px;
+}
+
+th,td {
+ text-align:left;
+ padding:12px;
+ border-bottom:1px solid var(--border);
+ font-size:13px;
+}
+
+th {
+ background:#f1f5f9;
+ color:var(--navy);
+ font-size:12px;
+}
+
+.modal-backdrop {
+ position:fixed;
+ inset:0;
+ background:#0f172a99;
+ backdrop-filter:blur(4px);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ z-index:999;
+ padding:16px;
+}
+
+.modal-box {
+ background:white;
+ max-width:420px;
+ width:100%;
+ border-radius:20px;
+ padding:25px;
+ border-top:5px solid var(--yellow);
+}
+
+.modal-title {
+ font-size:19px;
+ font-weight:800;
+ margin-bottom:8px;
+}
+
+.modal-msg {
+ font-size:14px;
+ color:var(--muted);
+ margin-bottom:18px;
+}
+
+.modal-actions {
+ display:flex;
+ justify-content:flex-end;
+ gap:10px;
+}
+
+footer {
+ text-align:center;
+ padding:25px 15px;
+ color:var(--muted);
+ font-size:12px;
+ border-top:1px solid var(--border);
+ background:white;
+ margin-top:40px;
+}
+
+/* =========================================
+   SIJIL DIGITAL
+========================================= */
+
+.cert-wrapper {
+ background:white;
+ border:10px double #ca8a04;
+ padding:35px 28px;
+ text-align:center;
+ color:#0f172a;
+ border-radius:5px;
+ box-shadow:0 10px 30px #0001;
+ margin:10px auto;
+ max-width:800px;
+}
+
+.cert-logo {
+ width:100px;
+ height:100px;
+ object-fit:contain;
+ margin:0 auto 8px;
+}
+
+.cert-org {
+ font-size:14px;
+ font-weight:800;
+ letter-spacing:1.5px;
+ color:var(--blue);
+ margin:5px 0;
+}
+
+.cert-title {
+ font-family:Georgia,serif;
+ font-size:32px;
+ font-weight:bold;
+ margin:8px 0 15px;
+}
+
+.cert-name {
+ font-family:inherit;
+ font-size:13px;
+ font-weight:800;
+ color:var(--blue);
+ margin:14px auto;
+ border-bottom:2px solid #ca8a04;
+ display:inline-block;
+ padding:0 20px 6px;
+ text-transform:uppercase;
+ max-width:100%;
+ overflow-wrap:anywhere;
+}
+
+.cert-score {
+ display:inline-block;
+ background:#fef9c3;
+ border:1.5px solid #eab308;
+ color:#854d0e;
+ padding:8px 20px;
+ border-radius:8px;
+ font-weight:800;
+ font-size:14px;
+ margin:13px 0;
+}
+
+/* Tandatangan */
+
+.cert-signature {
+ margin-top:30px;
+ text-align:center;
+}
+
+.signature-image {
+ display:block;
+ width:110px;
+ height:45px;
+ object-fit:contain;
+ margin:0 auto;
+ position:relative;
+ z-index:2;
 }
 
 .signature-line {
-
-    width: 280px;
-
-    max-width: 80%;
-
-    border-top: 1px solid #777;
-
-    margin: -12px auto 8px;
-
-    position: relative;
-
-    z-index: 1;
-
+ width:280px;
+ max-width:80%;
+ border-top:1px solid #777;
+ margin:-12px auto 8px;
+ position:relative;
+ z-index:1;
 }
 
-.signature-name{font-size:13px;font-weight:800;text-transform:uppercase}
+.signature-name {
+ font-size:13px;
+ font-weight:800;
+ text-transform:uppercase;
+}
 
-.signature-position{font-size:12px;line-height:1.6;color:#334155;font-weight:600}
+.signature-position {
+ font-size:12px;
+ line-height:1.6;
+ color:#334155;
+ font-weight:600;
+}
 
-@page{size:A4 landscape;margin:10mm}
+/* =========================================
+   CETAKAN A4 LANDSCAPE
+========================================= */
 
-@media print{
+@page {
+ size:A4 landscape;
+ margin:0;
+}
 
- body{background:white!important;display:block}
+@media print {
 
- header,footer,#home,#register,#quiz,#result,#leaderboard,#admin,#customModal,.no-print{display:none!important}
-
- .container{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
-
- #certificateView{display:block!important}
-
- .cert-wrapper{
-
-  max-width:none!important;width:100%!important;margin:0!important;
-
-  box-shadow:none!important;border:8px double #ca8a04!important;
-
-  min-height:180mm;display:flex;flex-direction:column;justify-content:center;
-
-  page-break-inside:avoid
-
+ html,body {
+  width:297mm!important;
+  height:210mm!important;
+  margin:0!important;
+  padding:0!important;
+  background:white!important;
+  display:block!important;
+  overflow:hidden!important;
  }
 
+ body * {
+  visibility:hidden!important;
+ }
+
+ .cert-wrapper,
+ .cert-wrapper * {
+  visibility:visible!important;
+ }
+
+ #certificateView {
+  display:block!important;
+  position:static!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+ }
+
+ .no-print,
+ header,
+ footer,
+ button {
+  display:none!important;
+ }
+
+ .container {
+  display:block!important;
+  width:297mm!important;
+  max-width:none!important;
+  height:210mm!important;
+  margin:0!important;
+  padding:0!important;
+ }
+
+ .cert-wrapper {
+  position:absolute!important;
+  left:8mm!important;
+  top:8mm!important;
+  width:281mm!important;
+  height:194mm!important;
+  min-height:0!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:15mm 12mm!important;
+  box-sizing:border-box!important;
+  box-shadow:none!important;
+  border:8px double #ca8a04!important;
+  border-radius:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:center!important;
+  overflow:hidden!important;
+  page-break-inside:avoid!important;
+  break-inside:avoid!important;
+  -webkit-print-color-adjust:exact!important;
+  print-color-adjust:exact!important;
+ }
+
+ .cert-logo {
+  width:75px!important;
+  height:75px!important;
+  margin-bottom:5px!important;
+ }
+
+ .cert-title {
+  font-size:28px!important;
+  margin:5px 0 10px!important;
+ }
+
+ .cert-org {
+  font-size:13px!important;
+ }
+
+ .cert-name,
+ .signature-name {
+  font-size:13px!important;
+ }
+
+ .cert-signature {
+  margin-top:15px!important;
+ }
+
+ .signature-image {
+  width:110px!important;
+  height:45px!important;
+ }
+
+ .signature-line {
+  margin-top:-12px!important;
+ }
 }
 
-@media(max-width:600px){
+/* Paparan telefon */
 
- .hero{padding:32px 18px}
+@media(max-width:600px) {
 
- .hero h1{font-size:30px}
+ .hero {
+  padding:32px 18px;
+ }
 
- .hero h3{font-size:13px}
+ .hero h1 {
+  font-size:30px;
+ }
 
- .card{padding:19px}
+ .hero h3 {
+  font-size:13px;
+ }
 
- header{padding:10px 14px}
+ .card {
+  padding:19px;
+ }
 
- .logo-title{font-size:16px}
+ header {
+  padding:10px 14px;
+ }
 
- .logo-sub{font-size:9px}
+ .logo-title {
+  font-size:16px;
+ }
 
- .question{font-size:18px}
+ .logo-sub {
+  font-size:9px;
+ }
 
- .cert-wrapper{padding:25px 15px}
+ .question {
+  font-size:18px;
+ }
 
- .cert-title{font-size:25px}
+ .cert-wrapper {
+  padding:25px 15px;
+ }
 
+ .cert-title {
+  font-size:25px;
+ }
 }
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
  <div class="logo">
-
   <img src="logo-mbd.png" alt="Logo Majlis Belia Daerah Perak Tengah">
-
   <div>
-
    <div class="logo-title">WARISAN MINDA</div>
-
    <div class="logo-sub">MAJLIS BELIA DAERAH PERAK TENGAH</div>
-
   </div>
-
  </div>
-
  <button class="secondary" onclick="bukaAdminModal()">ADMIN</button>
-
 </header>
 
 <div class="container">
 
+<!-- HALAMAN UTAMA -->
 <section id="home">
-
  <div class="hero">
-
   <img src="logo-mbd.png" class="hero-logo" alt="Logo MBD Perak Tengah">
-
   <div class="badge-perak">EDISI KHAS 36 SET SOALAN • NEGERI PERAK</div>
-
   <h1>WARISAN MINDA</h1>
-
   <h3>SEJARAH NEGERI PERAK, MALAYSIA & SUKAN TRADISIONAL</h3>
-
   <p>Uji kefahaman anda mengenai khazanah sejarah Negeri Perak, tokoh perjuangan kemerdekaan dan keunikan warisan budaya tanah air.</p>
 
   <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-
    <button class="primary" onclick="showRegister()">MULA CABARAN KUIZ →</button>
-
    <button class="secondary" onclick="showLeaderboard()">🏆 PAPAN MARKAH</button>
-
   </div>
-
  </div>
 
  <div class="card">
-
   <h2>📋 Format & Struktur Pemarkahan</h2>
-
   <div class="format-grid">
-
    <div class="format-item"><span class="val">8 Soalan</span><span class="lbl">Rawak daripada 36 soalan</span></div>
-
    <div class="format-item"><span class="val">3 Mudah</span><span class="lbl">10 markah setiap soalan</span></div>
-
    <div class="format-item"><span class="val">3 Sederhana</span><span class="lbl">20 markah setiap soalan</span></div>
-
    <div class="format-item"><span class="val">2 Sukar</span><span class="lbl">30 markah setiap soalan</span></div>
-
   </div>
-
   <p style="font-size:13px;color:var(--muted);text-align:center">Markah penuh ialah <strong>150 markah</strong>. Sijil digital dijana selepas kuiz tamat.</p>
-
  </div>
-
 </section>
 
+<!-- PENDAFTARAN -->
 <section id="register" class="hidden">
-
  <div class="card">
-
   <h2>📝 Pendaftaran Peserta</h2>
 
   <label>Nama Penuh Peserta *</label>
-
   <input id="nama" maxlength="120" placeholder="Masukkan nama penuh untuk sijil">
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-
-   <div><label>Umur</label><input id="umur" type="number" min="1" max="120" placeholder="Contoh: 16"></div>
-
-   <div><label>Tempat Tinggal</label><input id="daerah" maxlength="100" placeholder="Seri Iskandar / Parit"></div>
-
+   <div>
+    <label>Umur</label>
+    <input id="umur" type="number" min="1" max="120" placeholder="Contoh: 16">
+   </div>
+   <div>
+    <label>Tempat Tinggal</label>
+    <input id="daerah" maxlength="100" placeholder="Seri Iskandar / Parit">
+   </div>
   </div>
 
   <label>Mod Cabaran Kuiz</label>
-
   <select id="mod">
-
    <option value="santai">Mod Santai (Tiada had masa)</option>
-
    <option value="pertandingan">Mod Pertandingan (30 saat setiap soalan)</option>
-
   </select>
 
   <div style="display:flex;gap:10px">
-
    <button class="primary" style="flex:2" onclick="mulaKuiz()">MULA MENJAWAB →</button>
-
    <button class="outline" style="flex:1" onclick="home()">KEMBALI</button>
-
   </div>
-
  </div>
-
 </section>
 
+<!-- KUIZ -->
 <section id="quiz" class="hidden">
-
  <div class="card">
-
-  <div class="quiz-header"><span class="pill-tag" id="tahap"></span><span class="timer-pill" id="timer"></span></div>
+  <div class="quiz-header">
+   <span class="pill-tag" id="tahap"></span>
+   <span class="timer-pill" id="timer"></span>
+  </div>
 
   <div class="progress"><div class="progress-bar" id="progress"></div></div>
-
   <div class="q-counter" id="nombor"></div>
-
   <div class="question" id="soalan"></div>
-
   <div class="options" id="pilihan"></div>
 
   <div style="margin-top:24px;display:flex;justify-content:flex-end">
-
    <button class="primary" id="next" onclick="seterusnya()" disabled>SETERUSNYA →</button>
-
   </div>
-
  </div>
-
 </section>
 
+<!-- KEPUTUSAN -->
 <section id="result" class="hidden">
-
  <div class="card" style="text-align:center">
-
   <span class="badge-perak" style="background:#fef9c3;color:#854d0e;border-color:#fde047">KEPUTUSAN RASMI</span>
 
-  <div class="score-ring"><span class="score-num" id="markahNum">0</span><span class="score-max">DARIPADA 150</span></div>
+  <div class="score-ring">
+   <span class="score-num" id="markahNum">0</span>
+   <span class="score-max">DARIPADA 150</span>
+  </div>
 
   <h2 id="namaKeputusan" style="justify-content:center;margin-bottom:5px"></h2>
-
   <h3 id="pencapaian" style="color:var(--blue);margin-bottom:14px"></h3>
 
   <div style="display:flex;justify-content:center;gap:20px;font-size:14px;font-weight:700;margin-bottom:22px;flex-wrap:wrap">
-
-   <span id="betul" style="color:var(--green)"></span><span id="salah" style="color:var(--red)"></span>
-
+   <span id="betul" style="color:var(--green)"></span>
+   <span id="salah" style="color:var(--red)"></span>
   </div>
 
   <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-
    <button class="primary" onclick="sijil()">🖨️ CETAK SIJIL DIGITAL</button>
-
    <button class="secondary" onclick="showLeaderboard()">🏆 LEADERBOARD</button>
-
    <button class="outline" onclick="home()">HALAMAN UTAMA</button>
-
   </div>
-
  </div>
 
- <div class="card"><h2>📖 Semakan Jawapan & Fakta Warisan</h2><div id="semakan"></div></div>
-
+ <div class="card">
+  <h2>📖 Semakan Jawapan & Fakta Warisan</h2>
+  <div id="semakan"></div>
+ </div>
 </section>
 
+<!-- LEADERBOARD -->
 <section id="leaderboard" class="hidden">
-
  <div class="card">
-
   <h2>🏆 Papan Markah Tertinggi</h2>
-
   <div class="table-wrap">
-
    <table>
-
-    <thead><tr><th>Kedudukan</th><th>Nama Peserta</th><th>Tempat Tinggal</th><th>Markah</th></tr></thead>
-
+    <thead>
+     <tr>
+      <th>Kedudukan</th>
+      <th>Nama Peserta</th>
+      <th>Tempat Tinggal</th>
+      <th>Markah</th>
+     </tr>
+    </thead>
     <tbody id="ranking"></tbody>
-
    </table>
-
   </div>
-
-  <br><button class="outline" onclick="home()">← KEMBALI KE UTAMA</button>
-
+  <br>
+  <button class="outline" onclick="home()">← KEMBALI KE UTAMA</button>
  </div>
-
 </section>
 
+<!-- ADMIN -->
 <section id="admin" class="hidden">
-
  <div class="card">
-
   <h2>⚙️ Papan Pemuka Admin</h2>
 
   <div class="format-grid">
-
    <div class="format-item"><span class="val" id="jumlahPeserta">0</span><span class="lbl">Jumlah Penyertaan</span></div>
-
    <div class="format-item"><span class="val" id="purata">0.0</span><span class="lbl">Purata Markah</span></div>
-
    <div class="format-item"><span class="val" id="tertinggi">0</span><span class="lbl">Markah Tertinggi</span></div>
-
   </div>
 
   <div style="display:flex;gap:10px;flex-wrap:wrap">
-
    <button class="primary" onclick="exportCSV()">📥 MUAT TURUN REKOD CSV</button>
-
    <button class="danger" onclick="sahkanPadamRekod()">🗑️ PADAM SEMUA REKOD</button>
-
    <button class="outline" onclick="home()">KELUAR ADMIN</button>
-
   </div>
 
   <p style="font-size:12px;color:var(--muted);margin-top:15px">Nota: Rekod disimpan dalam storan pelayar pada peranti ini sahaja.</p>
-
  </div>
-
 </section>
 
+<!-- SIJIL -->
 <section id="certificateView" class="hidden">
 
  <div class="no-print" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:16px">
-
   <button class="outline" onclick="paparan('result')">← KEMBALI KE KEPUTUSAN</button>
-
   <button class="primary" onclick="window.print()">🖨️ CETAK / SIMPAN PDF</button>
-
  </div>
 
  <div class="cert-wrapper">
@@ -594,75 +926,60 @@ footer{text-align:center;padding:25px 15px;color:var(--muted);font-size:12px;bor
 
   <p style="font-size:14px;color:#334155">Dengan sukacitanya diperakui bahawa</p>
 
-  <!-- NAMA PESERTA: 13px, SAMA SAIZ DENGAN NAMA PENANDATANGAN -->
-
   <div class="cert-name" id="certNamaPeserta">NAMA PESERTA</div>
 
   <p style="font-size:14px;color:#334155">telah berjaya menyertai dan menamatkan Cabaran Kuiz Interaktif</p>
 
-  <h3 style="color:#0f172a;margin:10px 0;font-size:16px">WARISAN MINDA: SEJARAH NEGERI PERAK & SUKAN TRADISIONAL</h3>
+  <h3 style="color:#0f172a;margin:10px 0;font-size:16px">
+   WARISAN MINDA: SEJARAH NEGERI PERAK & SUKAN TRADISIONAL
+  </h3>
 
   <div class="cert-score" id="certMarkahPeserta">Pencapaian Markah: 0/150</div>
 
-  <p style="font-size:12px;color:#475569;margin-top:8px" id="certTarikhPeserta">Tarikh Dikeluarkan: -</p>
+  <p style="font-size:12px;color:#475569;margin-top:8px" id="certTarikhPeserta">
+   Tarikh Dikeluarkan: -
+  </p>
 
   <div class="cert-signature">
-
    <img src="tandatangan.png" alt="Tandatangan Pengerusi" class="signature-image">
-
    <div class="signature-line"></div>
-
    <div class="signature-name">MEGAT MUHAMMAD JAMIL BIN MEGAT AZAHAR</div>
-
    <div class="signature-position">
-
     PENGERUSI<br>
-
     MAJLIS BELIA DAERAH PERAK TENGAH
-
    </div>
-
   </div>
 
  </div>
-
 </section>
 
+<!-- MODAL -->
 <div id="customModal" class="modal-backdrop hidden">
-
  <div class="modal-box">
-
   <div class="modal-title" id="modalTitle">Makluman</div>
-
   <div class="modal-msg" id="modalMsg"></div>
 
-  <div id="modalInputWrap" class="hidden"><input type="password" id="modalInput" placeholder="Masukkan kata laluan..." onkeydown="if(event.key==='Enter')semakKataLaluanAdmin()"></div>
+  <div id="modalInputWrap" class="hidden">
+   <input type="password" id="modalInput" placeholder="Masukkan kata laluan..."
+    onkeydown="if(event.key==='Enter')semakKataLaluanAdmin()">
+  </div>
 
   <div class="modal-actions" id="modalActions"></div>
-
  </div>
-
 </div>
 
 </div>
 
 <footer>
-
  <strong>WARISAN MINDA © 2026</strong> • Majlis Belia Daerah Perak Tengah<br>
-
  Memperkasa Jati Diri Belia Melalui Sejarah & Warisan Negeri Perak
-
 </footer>
 
 <script>
 
-// =====================================================
-
-// BANK SOALAN: 36 SOALAN ASAL
-
-// Format: [tahap, kategori, soalan, pilihan, indeks jawapan, fakta, keutamaan Perak]
-
-// =====================================================
+/* =========================================
+   BANK SOALAN - 36 SOALAN
+========================================= */
 
 const DATA_SOALAN = [
 
@@ -741,633 +1058,576 @@ const DATA_SOALAN = [
 ];
 
 const BANK_SOALAN = DATA_SOALAN.map(x=>({
-
- tahap:x[0],kategori:x[1],soalan:x[2],pilihan:x[3],jawapan:x[4],fakta:x[5],keutamaanPerak:!!x[6]
-
+ tahap:x[0],
+ kategori:x[1],
+ soalan:x[2],
+ pilihan:x[3],
+ jawapan:x[4],
+ fakta:x[5],
+ keutamaanPerak:!!x[6]
 }));
 
-// =====================================================
-
-// PEMBOLEH UBAH SISTEM
-
-// =====================================================
+/* =========================================
+   PEMBOLEH UBAH SISTEM
+========================================= */
 
 let peserta={};
-
 let soalanDipilih=[];
-
 let jawapanPeserta=[];
-
 let indeks=0;
-
 let masa=30;
-
 let timer=null;
-
 let pilihanAktif=null;
-
 let mulaMasa=0;
-
 let rekodSemasa=null;
 
-const ADMIN_PASSWORD="warisan123"; // Tukar kata laluan ini sebelum digunakan.
-
+const ADMIN_PASSWORD="warisan123";
 const STORAGE_KEY="warisanData";
 
-function escapeHTML(value){
-
+function escapeHTML(value) {
  return String(value??"").replace(/[&<>"']/g,c=>({
-
-  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-
+  "&":"&amp;",
+  "<":"&lt;",
+  ">":"&gt;",
+  '"':"&quot;",
+  "'":"&#39;"
  }[c]));
-
 }
 
-function bacaRekod(){
-
- try{
-
+function bacaRekod() {
+ try {
   const data=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");
-
   return Array.isArray(data)?data:[];
-
- }catch(e){return [];}
-
-}
-
-function simpanRekod(data){
-
- try{
-
-  localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
-
-  return true;
-
- }catch(e){
-
-  paparNotifikasi("Ralat Simpanan","Storan pelayar penuh atau tidak tersedia. Rekod tidak dapat disimpan.");
-
-  return false;
-
+ } catch(e) {
+  return [];
  }
-
 }
 
-// =====================================================
+function simpanRekod(data) {
+ try {
+  localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+  return true;
+ } catch(e) {
+  paparNotifikasi("Ralat Simpanan","Storan pelayar penuh atau tidak tersedia. Rekod tidak dapat disimpan.");
+  return false;
+ }
+}
 
-// MODAL
+/* =========================================
+   MODAL
+========================================= */
 
-// =====================================================
-
-function tutupModal(){
-
+function tutupModal() {
  document.getElementById("customModal").classList.add("hidden");
-
  document.getElementById("modalInputWrap").classList.add("hidden");
-
  document.getElementById("modalInput").value="";
-
 }
 
-function paparNotifikasi(tajuk,mesej){
-
+function paparNotifikasi(tajuk,mesej) {
  document.getElementById("modalTitle").textContent=tajuk;
-
  document.getElementById("modalMsg").textContent=mesej;
-
  document.getElementById("modalInputWrap").classList.add("hidden");
-
- document.getElementById("modalActions").innerHTML='<button class="primary" onclick="tutupModal()">FAHAM</button>';
-
+ document.getElementById("modalActions").innerHTML=
+  '<button class="primary" onclick="tutupModal()">FAHAM</button>';
  document.getElementById("customModal").classList.remove("hidden");
-
 }
 
-function bukaAdminModal(){
-
+function bukaAdminModal() {
  document.getElementById("modalTitle").textContent="🔐 Log Masuk Admin";
-
  document.getElementById("modalMsg").textContent="Sila masukkan kata laluan pentadbir.";
-
  document.getElementById("modalInputWrap").classList.remove("hidden");
 
  document.getElementById("modalActions").innerHTML=
-
- '<button class="outline" onclick="tutupModal()">BATAL</button><button class="primary" onclick="semakKataLaluanAdmin()">MASUK</button>';
+  '<button class="outline" onclick="tutupModal()">BATAL</button><button class="primary" onclick="semakKataLaluanAdmin()">MASUK</button>';
 
  document.getElementById("customModal").classList.remove("hidden");
-
  setTimeout(()=>document.getElementById("modalInput").focus(),100);
-
 }
 
-function semakKataLaluanAdmin(){
-
+function semakKataLaluanAdmin() {
  const pwd=document.getElementById("modalInput").value;
 
- if(pwd===ADMIN_PASSWORD){
-
-  tutupModal();paparan("admin");dashboard();
-
- }else{
-
+ if(pwd===ADMIN_PASSWORD) {
+  tutupModal();
+  paparan("admin");
+  dashboard();
+ } else {
   document.getElementById("modalMsg").textContent="Kata laluan tidak sah. Sila cuba lagi.";
-
   document.getElementById("modalInput").value="";
-
   document.getElementById("modalInput").focus();
-
  }
-
 }
 
-function sahkanPadamRekod(){
-
+function sahkanPadamRekod() {
  document.getElementById("modalTitle").textContent="⚠️ Pengesahan Padam Rekod";
-
  document.getElementById("modalMsg").textContent="Adakah anda pasti mahu memadam semua rekod penyertaan? Tindakan ini tidak boleh diundur.";
-
  document.getElementById("modalInputWrap").classList.add("hidden");
 
  document.getElementById("modalActions").innerHTML=
-
- '<button class="outline" onclick="tutupModal()">BATAL</button><button class="danger" onclick="laksanaPadamRekod()">YA, PADAM SEMUA</button>';
+  '<button class="outline" onclick="tutupModal()">BATAL</button><button class="danger" onclick="laksanaPadamRekod()">YA, PADAM SEMUA</button>';
 
  document.getElementById("customModal").classList.remove("hidden");
-
 }
 
-function laksanaPadamRekod(){
-
- localStorage.removeItem(STORAGE_KEY);tutupModal();dashboard();
-
+function laksanaPadamRekod() {
+ localStorage.removeItem(STORAGE_KEY);
+ tutupModal();
+ dashboard();
  paparNotifikasi("Rekod Dipadam","Semua rekod penyertaan pada pelayar ini telah dipadam.");
-
 }
 
-// =====================================================
+/* =========================================
+   NAVIGASI
+========================================= */
 
-// NAVIGASI
-
-// =====================================================
-
-function paparan(id){
-
- const halaman=["home","register","quiz","result","leaderboard","admin","certificateView"];
+function paparan(id) {
+ const halaman=[
+  "home","register","quiz","result",
+  "leaderboard","admin","certificateView"
+ ];
 
  halaman.forEach(x=>document.getElementById(x).classList.add("hidden"));
-
  document.getElementById(id).classList.remove("hidden");
-
  window.scrollTo({top:0,behavior:"smooth"});
-
 }
 
-function home(){
-
- clearInterval(timer);timer=null;paparan("home");
-
+function home() {
+ clearInterval(timer);
+ timer=null;
+ paparan("home");
 }
 
-function showRegister(){paparan("register");}
+function showRegister() {
+ paparan("register");
+}
 
-function rawak(array){
-
+function rawak(array) {
  const a=[...array];
 
- for(let i=a.length-1;i>0;i--){
-
+ for(let i=a.length-1;i>0;i--) {
   const j=Math.floor(Math.random()*(i+1));
-
   [a[i],a[j]]=[a[j],a[i]];
-
  }
 
  return a;
-
 }
 
-// Pemilihan 70% keutamaan Perak jika stok soalan membenarkan.
-
-function pilihSoalanKeutamaanPerak(tahap,bilangan){
-
+function pilihSoalanKeutamaanPerak(tahap,bilangan) {
  let perak=rawak(BANK_SOALAN.filter(q=>q.tahap===tahap&&q.keutamaanPerak));
-
  let umum=rawak(BANK_SOALAN.filter(q=>q.tahap===tahap&&!q.keutamaanPerak));
-
  let hasil=[];
 
- for(let i=0;i<bilangan;i++){
-
-  if(perak.length&& (Math.random()<.7||!umum.length)) hasil.push(perak.pop());
-
-  else if(umum.length) hasil.push(umum.pop());
-
-  else if(perak.length) hasil.push(perak.pop());
-
+ for(let i=0;i<bilangan;i++) {
+  if(perak.length&&(Math.random()<.7||!umum.length)) {
+   hasil.push(perak.pop());
+  } else if(umum.length) {
+   hasil.push(umum.pop());
+  } else if(perak.length) {
+   hasil.push(perak.pop());
+  }
  }
 
  return rawak(hasil);
-
 }
 
-function mulaKuiz(){
+/* =========================================
+   MULA KUIZ
+========================================= */
 
+function mulaKuiz() {
  const nama=document.getElementById("nama").value.trim();
 
- if(!nama){paparNotifikasi("Maklumat Tidak Lengkap","Sila masukkan nama penuh peserta.");return;}
+ if(!nama) {
+  paparNotifikasi("Maklumat Tidak Lengkap","Sila masukkan nama penuh peserta.");
+  return;
+ }
 
  peserta={
-
-  nama,namaAsal:nama,
-
+  nama,
+  namaAsal:nama,
   umur:document.getElementById("umur").value||"-",
-
   daerah:document.getElementById("daerah").value.trim()||"Perak Tengah",
-
   mod:document.getElementById("mod").value
-
  };
 
  soalanDipilih=[
-
   ...pilihSoalanKeutamaanPerak("mudah",3),
-
   ...pilihSoalanKeutamaanPerak("sederhana",3),
-
   ...pilihSoalanKeutamaanPerak("sukar",2)
-
  ];
 
- if(soalanDipilih.length!==8){
-
+ if(soalanDipilih.length!==8) {
   paparNotifikasi("Ralat Bank Soalan","Bank soalan tidak mencukupi untuk memulakan kuiz.");
-
   return;
-
  }
 
- jawapanPeserta=[];indeks=0;mulaMasa=Date.now();
+ jawapanPeserta=[];
+ indeks=0;
+ mulaMasa=Date.now();
 
- paparan("quiz");paparSoalan();
-
+ paparan("quiz");
+ paparSoalan();
 }
 
-// =====================================================
+/* =========================================
+   PAPARAN SOALAN
+========================================= */
 
-// PAPARAN SOALAN
-
-// =====================================================
-
-function paparSoalan(){
-
- clearInterval(timer);timer=null;pilihanAktif=null;
+function paparSoalan() {
+ clearInterval(timer);
+ timer=null;
+ pilihanAktif=null;
 
  const q=soalanDipilih[indeks];
 
- const tahapLabel={mudah:"MUDAH",sederhana:"SEDERHANA",sukar:"SUKAR"};
+ const tahapLabel={
+  mudah:"MUDAH",
+  sederhana:"SEDERHANA",
+  sukar:"SUKAR"
+ };
 
  document.getElementById("tahap").textContent=
+  tahapLabel[q.tahap]+" | "+q.kategori+
+  (q.keutamaanPerak?" • PERAK":" • MALAYSIA");
 
-  tahapLabel[q.tahap]+" | "+q.kategori+(q.keutamaanPerak?" • PERAK":" • MALAYSIA");
-
- document.getElementById("nombor").textContent=`SOALAN ${indeks+1} DARIPADA ${soalanDipilih.length}`;
+ document.getElementById("nombor").textContent=
+  `SOALAN ${indeks+1} DARIPADA ${soalanDipilih.length}`;
 
  document.getElementById("soalan").textContent=q.soalan;
 
- document.getElementById("progress").style.width=((indeks+1)/soalanDipilih.length*100)+"%";
+ document.getElementById("progress").style.width=
+  ((indeks+1)/soalanDipilih.length*100)+"%";
 
  document.getElementById("next").disabled=true;
 
- document.getElementById("next").textContent=indeks===7?"HANTAR JAWAPAN ✓":"SETERUSNYA →";
+ document.getElementById("next").textContent=
+  indeks===7?"HANTAR JAWAPAN ✓":"SETERUSNYA →";
 
- q.pilihanRawak=rawak(q.pilihan.map((teks,i)=>({teks,betul:i===q.jawapan})));
+ q.pilihanRawak=rawak(q.pilihan.map((teks,i)=>({
+  teks,
+  betul:i===q.jawapan
+ })));
 
- document.getElementById("pilihan").innerHTML=q.pilihanRawak.map((p,i)=>`
+ document.getElementById("pilihan").innerHTML=
+  q.pilihanRawak.map((p,i)=>`
+   <button class="option" onclick="pilihJawapan(${i})">
+    <span class="opt-letter">${String.fromCharCode(65+i)}</span>
+    <span>${escapeHTML(p.teks)}</span>
+   </button>
+  `).join("");
 
-  <button class="option" onclick="pilihJawapan(${i})">
-
-   <span class="opt-letter">${String.fromCharCode(65+i)}</span>
-
-   <span>${escapeHTML(p.teks)}</span>
-
-  </button>`).join("");
-
- if(peserta.mod==="pertandingan"){
-
-  masa=30;kiraMasa();
-
- }else{
-
+ if(peserta.mod==="pertandingan") {
+  masa=30;
+  kiraMasa();
+ } else {
   document.getElementById("timer").textContent="🌿 MOD SANTAI";
-
  }
-
 }
 
-function pilihJawapan(i){
-
+function pilihJawapan(i) {
  if(pilihanAktif!==null)return;
 
  pilihanAktif=i;
 
- clearInterval(timer);timer=null; // PEMBETULAN: hentikan pemasa selepas memilih jawapan.
+ clearInterval(timer);
+ timer=null;
 
  const q=soalanDipilih[indeks];
-
  const betul=q.pilihanRawak[i].betul;
 
- jawapanPeserta[indeks]={pilihan:i,betul};
+ jawapanPeserta[indeks]={
+  pilihan:i,
+  betul
+ };
 
  document.querySelectorAll(".option").forEach((b,n)=>{
-
   if(n===i)b.classList.add("selected");
-
   b.disabled=true;
-
  });
 
  document.getElementById("next").disabled=false;
 
- if(peserta.mod==="pertandingan")document.getElementById("timer").textContent="✓ JAWAPAN DIREKOD";
-
+ if(peserta.mod==="pertandingan") {
+  document.getElementById("timer").textContent="✓ JAWAPAN DIREKOD";
+ }
 }
 
-function kiraMasa(){
-
+function kiraMasa() {
  document.getElementById("timer").textContent="⏱️ "+masa+" SAAT";
 
  timer=setInterval(()=>{
-
   masa--;
-
   document.getElementById("timer").textContent="⏱️ "+masa+" SAAT";
 
-  if(masa<=0){
+  if(masa<=0) {
+   clearInterval(timer);
+   timer=null;
 
-   clearInterval(timer);timer=null;
-
-   jawapanPeserta[indeks]={pilihan:null,betul:false};
+   jawapanPeserta[indeks]={
+    pilihan:null,
+    betul:false
+   };
 
    pilihanAktif=-1;
-
    seterusnya(true);
-
   }
-
  },1000);
-
 }
 
-function seterusnya(auto=false){
-
- if(pilihanAktif===null&&!auto){
-
+function seterusnya(auto=false) {
+ if(pilihanAktif===null&&!auto) {
   paparNotifikasi("Pilih Jawapan","Sila pilih satu jawapan sebelum meneruskan.");
-
   return;
-
  }
 
- clearInterval(timer);timer=null;
+ clearInterval(timer);
+ timer=null;
 
- if(indeks<soalanDipilih.length-1){
-
-  indeks++;paparSoalan();
-
- }else{
-
+ if(indeks<soalanDipilih.length-1) {
+  indeks++;
+  paparSoalan();
+ } else {
   keputusan();
-
  }
-
 }
 
-// =====================================================
+/* =========================================
+   KEPUTUSAN
+========================================= */
 
-// KEPUTUSAN
+function keputusan() {
+ clearInterval(timer);
+ timer=null;
 
-// =====================================================
+ let markah=0;
+ let betul=0;
 
-function keputusan(){
-
- clearInterval(timer);timer=null;
-
- let markah=0,betul=0;
-
- const nilai={mudah:10,sederhana:20,sukar:30};
+ const nilai={
+  mudah:10,
+  sederhana:20,
+  sukar:30
+ };
 
  soalanDipilih.forEach((q,i)=>{
-
-  if(jawapanPeserta[i]?.betul){markah+=nilai[q.tahap];betul++;}
-
+  if(jawapanPeserta[i]?.betul) {
+   markah+=nilai[q.tahap];
+   betul++;
+  }
  });
 
  const salah=soalanDipilih.length-betul;
-
  const tempoh=Math.round((Date.now()-mulaMasa)/1000);
 
  const semakan=soalanDipilih.map((q,i)=>{
-
   const j=jawapanPeserta[i];
 
   return {
-
    soalan:q.soalan,
-
-   pilihan:j?.pilihan===null||j?.pilihan===undefined?"Tidak dijawab (Tamat masa)":q.pilihanRawak[j.pilihan].teks,
-
+   pilihan:
+    j?.pilihan===null||j?.pilihan===undefined
+     ?"Tidak dijawab (Tamat masa)"
+     :q.pilihanRawak[j.pilihan].teks,
    jawapanBetul:q.pilihan[q.jawapan],
-
    betul:!!j?.betul,
-
    fakta:q.fakta
-
   };
-
  });
 
  rekodSemasa={
-
-  nama:peserta.nama,umur:peserta.umur,daerah:peserta.daerah,
-
-  markah,betul,salah,masa:tempoh,tarikh:new Date().toISOString(),semakan
-
+  nama:peserta.nama,
+  umur:peserta.umur,
+  daerah:peserta.daerah,
+  markah,
+  betul,
+  salah,
+  masa:tempoh,
+  tarikh:new Date().toISOString(),
+  semakan
  };
 
  const data=bacaRekod();
-
  data.push(rekodSemasa);
-
  simpanRekod(data);
 
  paparan("result");
 
  document.getElementById("markahNum").textContent=markah;
-
  document.getElementById("namaKeputusan").textContent=peserta.nama;
-
  document.getElementById("betul").textContent="✓ Betul: "+betul+" soalan";
-
  document.getElementById("salah").textContent="✕ Salah: "+salah+" soalan";
 
  document.getElementById("pencapaian").textContent=
-
   markah>=120?"CEMERLANG! PAKAR WARISAN PERAK 🌟":
-
   markah>=80?"SANGAT BAGUS! 👍":
-
-  markah>=50?"MEMUASKAN 💡":"TERUSKAN USAHA BELAJAR! 💪";
+  markah>=50?"MEMUASKAN 💡":
+  "TERUSKAN USAHA BELAJAR! 💪";
 
  paparSemakan(semakan);
-
 }
 
-function paparSemakan(data){
+function paparSemakan(data) {
+ document.getElementById("semakan").innerHTML=
+  data.map((q,i)=>`
+   <div class="review ${q.betul?"correct":"wrong"}">
+    <div style="font-weight:700;margin-bottom:6px">
+     ${i+1}. ${escapeHTML(q.soalan)}
+    </div>
 
- document.getElementById("semakan").innerHTML=data.map((q,i)=>`
+    <p style="font-size:13px;margin:4px 0">
+     Jawapan anda: <strong>${escapeHTML(q.pilihan)}</strong>
+    </p>
 
-  <div class="review ${q.betul?"correct":"wrong"}">
+    <p style="font-size:13px;margin:4px 0;color:var(--green)">
+     Jawapan tepat: <strong>${escapeHTML(q.jawapanBetul)}</strong>
+    </p>
 
-   <div style="font-weight:700;margin-bottom:6px">${i+1}. ${escapeHTML(q.soalan)}</div>
-
-   <p style="font-size:13px;margin:4px 0">Jawapan anda: <strong>${escapeHTML(q.pilihan)}</strong></p>
-
-   <p style="font-size:13px;margin:4px 0;color:var(--green)">Jawapan tepat: <strong>${escapeHTML(q.jawapanBetul)}</strong></p>
-
-   <p style="font-size:12px;margin-top:8px;padding-top:8px;border-top:1px dashed #ddd;color:var(--muted)">
-
-    💡 <strong>Info Warisan:</strong> ${escapeHTML(q.fakta)}
-
-   </p>
-
-  </div>`).join("");
-
+    <p style="font-size:12px;margin-top:8px;padding-top:8px;border-top:1px dashed #ddd;color:var(--muted)">
+     💡 <strong>Info Warisan:</strong> ${escapeHTML(q.fakta)}
+    </p>
+   </div>
+  `).join("");
 }
 
-// =====================================================
+/* =========================================
+   LEADERBOARD
+========================================= */
 
-// LEADERBOARD
-
-// =====================================================
-
-function showLeaderboard(){
-
+function showLeaderboard() {
  paparan("leaderboard");
 
- const data=bacaRekod().sort((a,b)=>b.markah-a.markah||a.masa-b.masa);
+ const data=bacaRekod().sort(
+  (a,b)=>b.markah-a.markah||a.masa-b.masa
+ );
 
- document.getElementById("ranking").innerHTML=data.length?data.map((p,i)=>{
+ document.getElementById("ranking").innerHTML=
+  data.length
+   ?data.map((p,i)=>{
+    const pingat=
+     i===0?"🥇 ":
+     i===1?"🥈 ":
+     i===2?"🥉 ":"";
 
-  const pingat=i===0?"🥇 ":i===1?"🥈 ":i===2?"🥉 ":"";
-
-  return `<tr>
-
-   <td><strong>${pingat}#${i+1}</strong></td>
-
-   <td><strong>${escapeHTML(p.nama)}</strong></td>
-
-   <td>${escapeHTML(p.daerah)}</td>
-
-   <td><span class="pill-tag">${Number(p.markah)||0} / 150</span></td>
-
-  </tr>`;
-
- }).join(""):`<tr><td colspan="4" style="text-align:center;padding:24px">Belum ada rekod penyertaan.</td></tr>`;
-
+    return `
+     <tr>
+      <td><strong>${pingat}#${i+1}</strong></td>
+      <td><strong>${escapeHTML(p.nama)}</strong></td>
+      <td>${escapeHTML(p.daerah)}</td>
+      <td><span class="pill-tag">${Number(p.markah)||0} / 150</span></td>
+     </tr>
+    `;
+   }).join("")
+   :`<tr><td colspan="4" style="text-align:center;padding:24px">Belum ada rekod penyertaan.</td></tr>`;
 }
 
-// =====================================================
+/* =========================================
+   SIJIL DIGITAL
+========================================= */
 
-// SIJIL DIGITAL
-
-// =====================================================
-
-function sijil(){
-
- if(!rekodSemasa){paparNotifikasi("Tiada Rekod","Rekod keputusan peserta tidak ditemui.");return;}
+function sijil() {
+ if(!rekodSemasa) {
+  paparNotifikasi("Tiada Rekod","Rekod keputusan peserta tidak ditemui.");
+  return;
+ }
 
  document.getElementById("certNamaPeserta").textContent=peserta.nama;
 
- document.getElementById("certMarkahPeserta").textContent="Pencapaian Markah: "+rekodSemasa.markah+"/150";
+ document.getElementById("certMarkahPeserta").textContent=
+  "Pencapaian Markah: "+rekodSemasa.markah+"/150";
 
- const tarikh=new Date(rekodSemasa.tarikh).toLocaleDateString("ms-MY",{day:"numeric",month:"long",year:"numeric"});
+ const tarikh=new Date(rekodSemasa.tarikh).toLocaleDateString(
+  "ms-MY",
+  {
+   day:"numeric",
+   month:"long",
+   year:"numeric"
+  }
+ );
 
- document.getElementById("certTarikhPeserta").textContent="Tarikh Dikeluarkan: "+tarikh;
+ document.getElementById("certTarikhPeserta").textContent=
+  "Tarikh Dikeluarkan: "+tarikh;
 
  paparan("certificateView");
-
 }
 
-// =====================================================
+/* =========================================
+   DASHBOARD ADMIN
+========================================= */
 
-// DASHBOARD ADMIN
-
-// =====================================================
-
-function dashboard(){
-
+function dashboard() {
  const data=bacaRekod();
-
  const jumlah=data.length;
 
- const purata=jumlah?data.reduce((s,x)=>s+(Number(x.markah)||0),0)/jumlah:0;
+ const purata=jumlah
+  ?data.reduce((s,x)=>s+(Number(x.markah)||0),0)/jumlah
+  :0;
 
- const tertinggi=jumlah?Math.max(...data.map(x=>Number(x.markah)||0)):0;
+ const tertinggi=jumlah
+  ?Math.max(...data.map(x=>Number(x.markah)||0))
+  :0;
 
  document.getElementById("jumlahPeserta").textContent=jumlah;
-
  document.getElementById("purata").textContent=purata.toFixed(1)+"/150";
-
  document.getElementById("tertinggi").textContent=tertinggi+"/150";
-
 }
 
-function exportCSV(){
+/* =========================================
+   EXPORT CSV
+========================================= */
 
+function exportCSV() {
  const data=bacaRekod();
 
- if(!data.length){paparNotifikasi("Tiada Rekod","Belum ada rekod peserta untuk dimuat turun.");return;}
+ if(!data.length) {
+  paparNotifikasi("Tiada Rekod","Belum ada rekod peserta untuk dimuat turun.");
+  return;
+ }
 
  const rows=[
-
   ["Nama","Umur","Tempat Tinggal","Markah","Betul","Salah","Masa (Saat)","Tarikh"],
-
-  ...data.map(p=>[p.nama,p.umur,p.daerah,p.markah,p.betul,p.salah,p.masa,p.tarikh])
-
+  ...data.map(p=>[
+   p.nama,
+   p.umur,
+   p.daerah,
+   p.markah,
+   p.betul,
+   p.salah,
+   p.masa,
+   p.tarikh
+  ])
  ];
 
- const csv=rows.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\r\n");
+ const csv=rows.map(row=>
+  row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")
+ ).join("\r\n");
 
- const blob=new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8;"});
+ const blob=new Blob(
+  ["\ufeff"+csv],
+  {type:"text/csv;charset=utf-8;"}
+ );
 
  const url=URL.createObjectURL(blob);
-
  const link=document.createElement("a");
 
- link.href=url;link.download="warisan-minda-perak-tengah.csv";
+ link.href=url;
+ link.download="warisan-minda-perak-tengah.csv";
 
- document.body.appendChild(link);link.click();link.remove();
+ document.body.appendChild(link);
+ link.click();
+ link.remove();
 
- URL.revokeObjectURL(url);
-
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
-// Tutup modal apabila latar belakang ditekan.
+/* Tutup modal apabila latar belakang ditekan */
 
 document.getElementById("customModal").addEventListener("click",e=>{
-
  if(e.target.id==="customModal")tutupModal();
-
 });
 
-// Semakan bilangan bank soalan untuk pembangun.
+/* Semakan bank soalan */
 
 console.info("WARISAN MINDA: "+BANK_SOALAN.length+" soalan dimuatkan.");
 
 </script>
-
 </body>
-
 </html>
