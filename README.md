@@ -574,7 +574,7 @@ footer {
  max-width:80%;
  border-top:1px solid #777;
  margin:0;
- z-index:1;
+ z-index:3;
 }
 
 .signature-name {
