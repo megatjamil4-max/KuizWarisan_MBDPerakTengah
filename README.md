@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <html lang="ms">
 <head>
 <meta charset="UTF-8">
@@ -542,36 +544,47 @@ footer {
  margin:13px 0;
 }
 
-/* Tandatangan */
+/* =========================================
+   TANDATANGAN - IMEJ DI ATAS GARIS
+========================================= */
 
 .cert-signature {
- margin-top:30px;
+ position:relative;
+ margin-top:25px;
  text-align:center;
+ padding-top:65px;
 }
 
 .signature-image {
+ position:absolute;
+ top:0;
+ left:50%;
+ transform:translateX(-50%);
  display:block;
- width:110px;
- height:45px;
+ width:140px;
+ height:65px;
  object-fit:contain;
- margin:0 auto;
- position:relative;
  z-index:2;
 }
 
 .signature-line {
+ position:absolute;
+ top:45px;
+ left:50%;
+ transform:translateX(-50%);
  width:280px;
  max-width:80%;
  border-top:1px solid #777;
- margin:-12px auto 8px;
- position:relative;
+ margin:0;
  z-index:1;
 }
 
 .signature-name {
+ position:relative;
  font-size:13px;
  font-weight:800;
  text-transform:uppercase;
+ margin-top:5px;
 }
 
 .signature-position {
@@ -582,7 +595,7 @@ footer {
 }
 
 /* =========================================
-   CETAKAN A4 LANDSCAPE
+   CETAK SIJIL A4 LANDSCAPE
 ========================================= */
 
 @page {
@@ -597,42 +610,46 @@ footer {
   height:210mm!important;
   margin:0!important;
   padding:0!important;
+  overflow:hidden!important;
   background:white!important;
   display:block!important;
-  overflow:hidden!important;
  }
 
- body * {
-  visibility:hidden!important;
- }
-
- .cert-wrapper,
- .cert-wrapper * {
-  visibility:visible!important;
- }
-
- #certificateView {
-  display:block!important;
-  position:static!important;
-  width:100%!important;
-  margin:0!important;
-  padding:0!important;
- }
-
- .no-print,
- header,
- footer,
- button {
+ body > header,
+ body > footer {
   display:none!important;
  }
 
  .container {
+  position:static!important;
   display:block!important;
   width:297mm!important;
+  height:210mm!important;
   max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+ }
+
+ .container > section:not(#certificateView) {
+  display:none!important;
+ }
+
+ #certificateView {
+  display:block!important;
+  position:absolute!important;
+  left:0!important;
+  top:0!important;
+  width:297mm!important;
   height:210mm!important;
   margin:0!important;
   padding:0!important;
+  overflow:hidden!important;
+  background:white!important;
+ }
+
+ #certificateView .no-print {
+  display:none!important;
  }
 
  .cert-wrapper {
@@ -644,18 +661,22 @@ footer {
   min-height:0!important;
   max-width:none!important;
   margin:0!important;
-  padding:15mm 12mm!important;
+  padding:12mm 15mm!important;
   box-sizing:border-box!important;
-  box-shadow:none!important;
-  border:8px double #ca8a04!important;
-  border-radius:0!important;
+
   display:flex!important;
   flex-direction:column!important;
   justify-content:center!important;
   align-items:center!important;
+
+  border:8px double #ca8a04!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+
   overflow:hidden!important;
-  page-break-inside:avoid!important;
   break-inside:avoid!important;
+  page-break-inside:avoid!important;
+
   -webkit-print-color-adjust:exact!important;
   print-color-adjust:exact!important;
  }
@@ -666,13 +687,13 @@ footer {
   margin-bottom:5px!important;
  }
 
+ .cert-org {
+  font-size:13px!important;
+ }
+
  .cert-title {
   font-size:28px!important;
   margin:5px 0 10px!important;
- }
-
- .cert-org {
-  font-size:13px!important;
  }
 
  .cert-name,
@@ -681,20 +702,35 @@ footer {
  }
 
  .cert-signature {
+  position:relative!important;
   margin-top:15px!important;
+  padding-top:65px!important;
  }
 
  .signature-image {
-  width:110px!important;
-  height:45px!important;
+  position:absolute!important;
+  top:0!important;
+  left:50%!important;
+  transform:translateX(-50%)!important;
+  width:140px!important;
+  height:65px!important;
+  z-index:2!important;
  }
 
  .signature-line {
-  margin-top:-12px!important;
+  position:absolute!important;
+  top:45px!important;
+  left:50%!important;
+  transform:translateX(-50%)!important;
+  width:280px!important;
+  max-width:80%!important;
+  margin:0!important;
+  z-index:1!important;
  }
+
 }
 
-/* Paparan telefon */
+/* PAPARAN TELEFON */
 
 @media(max-width:600px) {
 
@@ -1328,7 +1364,6 @@ function pilihJawapan(i) {
  if(pilihanAktif!==null)return;
 
  pilihanAktif=i;
-
  clearInterval(timer);
  timer=null;
 
