@@ -646,7 +646,7 @@ footer {
     <div class="logo">
          <img src="logo-mbd.png"
      class="hero-logo"
-     alt="Logo Majlis Belia Daerah Perak Tengah"> viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+     alt="Logo Majlis Belia Daerah Perak Tengah"> 
             <defs>
                 <path id="topTextPath" d="M 32,100 A 68,68 0 1,1 168,100" />
                 <path id="bottomTextPath" d="M 24,100 A 76,76 0 0,0 176,100" />
@@ -710,7 +710,7 @@ footer {
     <div class="hero">
          <img src="logo-mbd.png"
      class="hero-logo"
-     alt="Logo Majlis Belia Daerah Perak Tengah"> viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+     alt="Logo Majlis Belia Daerah Perak Tengah"> 
             <defs>
                 <path id="heroTopText" d="M 32,100 A 68,68 0 1,1 168,100" />
                 <path id="heroBottomText" d="M 24,100 A 76,76 0 0,0 176,100" />
@@ -933,7 +933,7 @@ footer {
     <div class="cert-wrapper">
          <img src="logo-mbd.png"
      alt="Logo Majlis Belia Daerah Perak Tengah"
-     style="width:105px;height:105px;object-fit:contain;margin-bottom:6px;"> viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 6px;">
+     style="width:105px;height:105px;object-fit:contain;margin-bottom:6px;">  style="margin-bottom: 6px;">
             <defs>
                 <path id="certTopText" d="M 32,100 A 68,68 0 1,1 168,100" />
                 <path id="certBottomText" d="M 24,100 A 76,76 0 0,0 176,100" />
