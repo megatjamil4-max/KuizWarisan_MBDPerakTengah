@@ -262,11 +262,40 @@ footer{text-align:center;padding:25px 15px;color:var(--muted);font-size:12px;bor
 
 .cert-score{display:inline-block;background:#fef9c3;border:1.5px solid #eab308;color:#854d0e;padding:8px 20px;border-radius:8px;font-weight:800;font-size:14px;margin:13px 0}
 
-.cert-signature{margin-top:30px;text-align:center}
+.cert-signature{margin-top:30px;text-align:.signature-image {
 
-.signature-image{display:block;width:160px;height:65px;object-fit:contain;margin:0 auto -5px}
+    display: block;
 
-.signature-line{width:280px;max-width:80%;border-top:1.5px solid #0f172a;margin:0 auto 8px}
+    width: 160px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.signature-line {
+
+    width: 280px;
+
+    max-width: 80%;
+
+    border-top: 1px solid #777;
+
+    margin: -18px auto 8px;
+
+    position: relative;
+
+    z-index: 1;
+    
+    }
+
 
 .signature-name{font-size:13px;font-weight:800;text-transform:uppercase}
 
