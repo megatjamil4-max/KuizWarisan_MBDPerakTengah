@@ -597,134 +597,186 @@ footer {
 ========================================= */
 
 @page {
- size:A4 landscape;
- margin:0;
+
+    size: A4 landscape;
+
+    margin: 8mm;
+
 }
 
 @media print {
 
- html,body {
-  width:297mm!important;
-  height:210mm!important;
-  margin:0!important;
-  padding:0!important;
-  overflow:hidden!important;
-  background:white!important;
-  display:block!important;
- }
+    html, body {
 
- body > header,
- body > footer {
-  display:none!important;
- }
+        margin: 0 !important;
 
- .container {
-  position:static!important;
-  display:block!important;
-  width:297mm!important;
-  height:210mm!important;
-  max-width:none!important;
-  margin:0!important;
-  padding:0!important;
-  overflow:hidden!important;
- }
+        padding: 0 !important;
 
- .container > section:not(#certificateView) {
-  display:none!important;
- }
+        width: 100% !important;
 
- #certificateView {
-  display:block!important;
-  position:absolute!important;
-  left:0!important;
-  top:0!important;
-  width:297mm!important;
-  height:210mm!important;
-  margin:0!important;
-  padding:0!important;
-  overflow:hidden!important;
-  background:white!important;
- }
+        min-height: 0 !important;
 
- #certificateView .no-print {
-  display:none!important;
- }
+        background: white !important;
 
- .cert-wrapper {
-  position:absolute!important;
-  left:8mm!important;
-  top:8mm!important;
-  width:281mm!important;
-  height:194mm!important;
-  min-height:0!important;
-  max-width:none!important;
-  margin:0!important;
-  padding:12mm 15mm!important;
-  box-sizing:border-box!important;
+        display: block !important;
 
-  display:flex!important;
-  flex-direction:column!important;
-  justify-content:center!important;
-  align-items:center!important;
+        overflow: visible !important;
 
-  border:8px double #ca8a04!important;
-  border-radius:0!important;
-  box-shadow:none!important;
+    }
 
-  overflow:hidden!important;
-  break-inside:avoid!important;
-  page-break-inside:avoid!important;
+    /* Sembunyikan semua kandungan asal */
 
-  -webkit-print-color-adjust:exact!important;
-  print-color-adjust:exact!important;
- }
+    body * {
 
- .cert-logo {
-  width:75px!important;
-  height:75px!important;
-  margin-bottom:5px!important;
- }
+        visibility: hidden !important;
 
- .cert-org {
-  font-size:13px!important;
- }
+    }
 
- .cert-title {
-  font-size:28px!important;
-  margin:5px 0 10px!important;
- }
+    /* Paparkan sijil sahaja */
 
- .cert-name,
- .signature-name {
-  font-size:13px!important;
- }
+    #certificateView,
 
- .cert-signature {
-  position:relative!important;
-  margin-top:15px!important;
-  padding-top:65px!important;
- }
+    #certificateView * {
 
- .signature-image {
-  position:absolute!important;
-  top:0!important;
-  left:50%!important;
-  transform:translateX(-50%)!important;
-  width:140px!important;
-  height:65px!important;
-  z-index:2!important;
- }
+        visibility: visible !important;
 
- .signature-line {
-  position:absolute!important;
-  top:45px!important;
-  left:50%!important;
-  transform:translateX(-50%)!important;
-  width:280px!important;
-  max-width:80%!important;
-  margin:0!important;
-  z-index:1!important;
- }
+    }
+
+    #certificateView {
+
+        display: block !important;
+
+        position: absolute !important;
+
+        top: 0 !important;
+
+        left: 0 !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        background: white !important;
+
+    }
+
+    #certificateView .no-print {
+
+        display: none !important;
+
+    }
+
+    .cert-wrapper {
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        justify-content: center !important;
+
+        align-items: center !important;
+
+        position: relative !important;
+
+        width: 100% !important;
+
+        height: 190mm !important;
+
+        min-height: 0 !important;
+
+        max-width: none !important;
+
+        margin: 0 !important;
+
+        padding: 10mm 15mm !important;
+
+        border: 8px double #ca8a04 !important;
+
+        box-shadow: none !important;
+
+        overflow: hidden !important;
+
+        break-inside: avoid !important;
+
+        page-break-inside: avoid !important;
+
+        -webkit-print-color-adjust: exact !important;
+
+        print-color-adjust: exact !important;
+
+    }
+
+    .cert-logo {
+
+        width: 75px !important;
+
+        height: 75px !important;
+
+    }
+
+    .cert-title {
+
+        font-size: 28px !important;
+
+    }
+
+    .cert-name,
+
+    .signature-name {
+
+        font-size: 13px !important;
+
+    }
+
+    .cert-signature {
+
+        position: relative !important;
+
+        margin-top: 15px !important;
+
+        padding-top: 65px !important;
+
+    }
+
+    .signature-image {
+
+        position: absolute !important;
+
+        top: 0 !important;
+
+        left: 50% !important;
+
+        transform: translateX(-50%) !important;
+
+        width: 140px !important;
+
+        height: 65px !important;
+
+        object-fit: contain !important;
+
+        z-index: 2 !important;
+
+    }
+
+    .signature-line {
+
+        position: absolute !important;
+
+        top: 45px !important;
+
+        left: 50% !important;
+
+        transform: translateX(-50%) !important;
+
+        width: 280px !important;
+
+        max-width: 80% !important;
+
+        z-index: 1 !important;
+
+    }
 
 }
 
