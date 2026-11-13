@@ -694,7 +694,6 @@ footer {
             <text font-family="Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="1.5">
                 <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">PERAK TENGAH</textPath>
             </text>
-        </svg>
         <div>
             <div class="logo-title">WARISAN MINDA</div>
             <div class="logo-sub">MAJLIS BELIA DAERAH PERAK TENGAH</div>
@@ -758,7 +757,6 @@ footer {
             <text font-family="Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="1.5">
                 <textPath href="#heroBottomText" startOffset="50%" text-anchor="middle">PERAK TENGAH</textPath>
             </text>
-        </svg>
         <div class="badge-perak">EDISI KHAS 36 SET SOALAN • NEGERI PERAK</div>
         <h1>WARISAN MINDA</h1>
         <h3>SEJARAH NEGERI PERAK, MALAYSIA & SUKAN TRADISIONAL</h3>
@@ -981,7 +979,7 @@ footer {
             <text font-family="Arial, sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="1.5">
                 <textPath href="#certBottomText" startOffset="50%" text-anchor="middle">PERAK TENGAH</textPath>
             </text>
-        </svg>
+        
         <div class="cert-org">MAJLIS BELIA DAERAH PERAK TENGAH</div>
         <div class="cert-title">SIJIL PENYERTAAN</div>
         <p style="font-size: 15px; color: #334155;">Dengan sukacitanya diperakui bahawa</p>
